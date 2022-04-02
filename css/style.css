@@ -13,8 +13,7 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
-
-.nav-link {
+.navbar .nav-link {
     color: #000 !important;
 }
 
