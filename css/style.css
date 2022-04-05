@@ -7,9 +7,14 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   background-color: #f1f8f3;
 }
 
+ul{
+  list-style: none;
+}
 a {
   text-decoration: none;
   cursor: pointer;
@@ -49,6 +54,9 @@ a {
   background: transparent;
   border: none;
 }
+.messaging-area{
+  position: relative;
+}
 
 .seccondary-btn .active {
   padding: 1rem;
@@ -81,6 +89,37 @@ a {
 
 .main-container {
   width: 100vw !important;
+}
+
+.messaging-area  ul li{
+  margin: 0rem .2rem;
+}
+.messaging-area ul li img{
+  width: 1.5rem;
+  height: 1.5rem;
+  object-fit: cover;
+}
+.chat-area{
+  position: relative;
+  overflow-y: scroll !important;
+  object-fit: cover;
+  height: 70vh;
+}
+.chat-area .d-flex span{
+  font-size: .8rem;
+}
+.chat-area img{
+  width: 3.5rem;
+  border-radius: 5px;
+  height: 3rem;
+  object-fit: cover;
+}
+.input-area i{
+  font-size: 1.5em;
+  margin: 0rem .5rem;
+}
+.tab-content>.tab-pane {
+  height: 100vh !important;
 }
 
 /* Media queries */

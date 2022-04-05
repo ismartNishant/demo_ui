@@ -212,15 +212,15 @@
         </nav>
         <!-- code editor navigation bar end-->
         <!-- main editor tab -->
-        <div class="d-flex bd-highlight editor-container" style="height: 100vh">
-          <div class="flex-fill d-flex flex-column border border-1" style="height: 100vh">
+        <div class="d-flex bd-highlight editor-container" style="height: 100%;" >
+          <div class="flex-fill d-flex flex-column border border-1" >
             <div class="">En</div>
             <div class="border border-1">ghf</div>
           </div>
-          <div class="p-2 flex-fill col-2 border border-1" style="height: 100vh">
+          <div class="p-2 flex-fill col-2 border border-1" >
             Flex item xcvx
           </div>
-          <div class="p-2 flex-fill col-md-6 border border-1" style="height: 100vh">
+          <div class="p-2 flex-fill col-md-6 border border-1" >
             <nav>
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
                 <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
@@ -258,7 +258,7 @@
               </div>
             </div>
           </div>
-          <div class="p-2 flex-fill col-3 border border-1" style="height: 100vh">
+          <div class="flex-fill col-3 border border-1">
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
@@ -305,14 +305,102 @@
                   </li>
                 </ul>
               </div>
-              <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+              <div class="p-2 tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque vitae, sed, nulla minus dolor quas
                   sunt voluptatibus pariatur praesentium quis aliquam eos, iusto enim eum! Repellat sequi vero labore
                   ipsam.</p>
               </div>
-              <div class="tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
-                <p> this is chat container</p>
+              <!-- chat section-->
+              <div class="messaging-area  tab-pane" id="messages" role="tabpanel" aria-labelledby="messages-tab">
+                <div class="px-1 py-2 d-flex justify-content-between align-items-center border-bottom  border">
+                  <div>
+                    <h4 class="m-0">Frontend</h4>
+                    <span style="color: #666;">Grounp Name</span>
+                  </div>
+                <!--joined user in coversation-->
+                  <div  class="d-flex p-1 align-items-center border border-success"> 
+                    <ul class="d-flex m-0 p-0">
+                      <li><img src="./img/u.png" alt="..."></li>
+                      <li><img src="./img/u2.png" alt="..."></li>
+                      <li><img src="./img/u3.png" alt="..."></li>
+                      <li><img src="./img/079.jpg" alt="..."></li>
+                    </ul>
+                    <h5 class="m-0 mx-1 px-3 py-1" style="background-color: #0ebc64;">4</h5>
+                  </div>
+                </div>
+                <!-- user chat area-->
+                <div class="chat-area px-2 pb-2">
+                  <div class="py-2 d-flex">
+                    <img src="./img/u.png" alt="....">
+                    <div class="ps-2">
+                      <div class="d-flex align-items-center">
+                         <h5 class="m-0 fw-bolder">Client Name </h5>
+                         <span class="ms-2">7.30 AM</span>
+                      </div>
+                      <p class="m-0">All members join meeeting at 12.00 Am sharp </p>
+                    </div>
+                  </div>
+                  <div class="py-2 d-flex">
+                    <img src="./img/u2.png" alt="....">
+                    <div class="ps-2">
+                      <div class="d-flex align-items-center">
+                         <h5 class="m-0 fw-bolder">client Name </h5>
+                         <span class="ms-2">11.30 AM</span>
+                      </div>
+                      <p class="m-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium distinctio ex ullam veniam expedita facilis dolores architecto praesentium ducimus eligendi! Rem veritatis est tenetur excepturi recusandae voluptas voluptatibus fugit omnis! </p>
+                    </div>
+                  </div>
+                  <div class="py-2 d-flex">
+                    <img src="./img/u3.png" alt="....">
+                    <div class="ps-2">
+                      <div class="d-flex align-items-center">
+                         <h5 class="m-0 fw-bolder">Client Name </h5>
+                         <span class="ms-2">9.00 AM</span>
+                      </div>
+                      <p class="m-0">Sir I'm out of town can we dot it on some aonther time </p>
+                    </div>
+                  </div>
+                  <div class="py-2 d-flex">
+                    <img src="./img/u.png" alt="....">
+                    <div class="ps-2">
+                      <div class="d-flex align-items-center">
+                         <h5 class="m-0 fw-bolder">Cient Name </h5>
+                         <span class="ms-2">4.44 PM</span>
+                      </div>
+                      <p class="m-0">hey are you there for quick call so we can proceed, no late commers are allowed , be on time</p>
+                    </div>
+                  </div>
+                  <div class="py-2 d-flex">
+                    <img src="./img/u2.png" alt="....">
+                    <div class="ps-2">
+                      <div class="d-flex align-items-center">
+                         <h5 class="m-0 fw-bolder">client Name </h5>
+                         <span class="ms-2">11.30 AM</span>
+                      </div>
+                      <p class="m-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium distinctio ex ullam veniam expedita facilis dolores architecto praesentium ducimus eligendi! Rem veritatis est tenetur excepturi recusandae voluptas voluptatibus fugit omnis! </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- user input type section-->
+                <div class="border input-area p-1" style="background-color: rgba(226, 225, 225, 0.593);">
+                  <div class="px-2"> <i class='bx bx-bold'></i> <i class='bx bx-italic'></i><i class='bx bx-link'></i><i
+                      class='bx bx-list-ul'></i><i class='bx bx-list-ol'></i></div>
+                  <div class="">
+                    <textarea class="form-control" placeholder="send a message" id="exampleFormControlTextarea1"
+                      rows="3"></textarea>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center px-2 py-1">
+                    <div >
+                       <i class='bx bx-video'></i> 
+                       <i class='bx bx-microphone'></i>
+                       <i class='bx bx-smile'></i> 
+                       <i class='bx bx-at'></i> 
+                    </div> 
+                     <i class='bx bxl-telegram'></i>
+                  </div>
+                </div>
               </div>
+              <!-- output section-->
               <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
                 <p>Compiled Successfully</p>
               </div>
@@ -325,8 +413,8 @@
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-  </script>
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
