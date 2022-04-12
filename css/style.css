@@ -121,6 +121,14 @@ a {
 .tab-content>.tab-pane {
   height: 100vh !important;
 }
+.list-group li{
+  cursor: pointer;
+}
+.tab-content{
+  position: relative;
+  overflow-y: scroll !important;
+  object-fit: cover;
+}
 
 /* Media queries */
 @media (max-width: 1000px) {
