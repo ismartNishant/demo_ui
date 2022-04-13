@@ -212,15 +212,15 @@
         </nav>
         <!-- code editor navigation bar end-->
         <!-- main editor tab -->
-        <div class="d-flex bd-highlight editor-container" style="height: 100%;" >
-          <div class="flex-fill d-flex flex-column border border-1" >
+        <div class="d-flex bd-highlight editor-container" style="height: 100%;">
+          <div class="flex-fill d-flex flex-column border border-1">
             <div class="">En</div>
             <div class="border border-1">ghf</div>
           </div>
-          <div class="p-2 flex-fill col-2 border border-1" >
+          <div class="p-2 flex-fill col-2 border border-1">
             Flex item xcvx
           </div>
-          <div class="p-2 flex-fill col-md-6 border border-1" >
+          <div class="p-2 flex-fill col-md-6 border border-1">
             <nav>
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
                 <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home"
@@ -258,9 +258,9 @@
               </div>
             </div>
           </div>
-          <div class="flex-fill col-3 border border-1">
+          <div class="flex-fill col-4 border border-1">
             <!-- Nav tabs -->
-            <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <ul class="nav nav-tabs justify-content-center" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button"
                   role="tab" aria-controls="home" aria-selected="true">Issue</button>
@@ -274,8 +274,12 @@
                   role="tab" aria-controls="messages" aria-selected="false">Chat</button>
               </li>
               <li class="nav-item" role="presentation">
-                <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings" type="button"
-                  role="tab" aria-controls="settings" aria-selected="false">Output</button>
+                <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#output" type="button"
+                  role="tab" aria-controls="output" aria-selected="false">Output</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#testcase" type="button"
+                  role="tab" aria-controls="testcase" aria-selected="false">TestCase</button>
               </li>
             </ul>
 
@@ -283,28 +287,34 @@
             <div class="tab-content">
               <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
                 <div class="py-2 d-flex align-self-center ">
-                  <button class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">Filter</button>
+                  <a class="btn btn-outline-success" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"> Filter </a>
                   <div class="input-group ms-1">
-                    <input type="text" class="form-control" placeholder="search Filter" aria-label="Filter" aria-describedby="basic-addon1">
-                    <span class="input-group-text" id="basic-addon1"><i class='bx bx-search' ></i></span>
+                    <input type="text" class="form-control" placeholder="search Filter" aria-label="Filter"
+                      aria-describedby="basic-addon1">
+                    <span class="input-group-text" id="basic-addon1"><i class='bx bx-search'></i></span>
                   </div>
                 </div>
-               
-                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
+                  aria-labelledby="offcanvasWithBothOptionsLabel">
                   <div class="offcanvas-header border-bottom  border-success">
                     <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">Apply Filters</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                      aria-label="Close"></button>
                   </div>
                   <div class="offcanvas-body">
                     <!-- type filter-->
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                       <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingOne">
-                          <button class="btn btn-outline-success btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#type" aria-expanded="false" aria-controls="flush-collapseOne">
+                          <button class="btn btn-outline-success btn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#type" aria-expanded="false" aria-controls="flush-collapseOne">
                             Type <i class='bx bxs-right-arrow'></i>
                           </button>
                         </h2>
-                        <div id="type" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div id="type" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                          data-bs-parent="#accordionFlushExample">
                           <div class="accordion-body">
                             <div class="list-group">
                               <label class="list-group-item">
@@ -329,7 +339,8 @@
                               </label>
                               <label class="list-group-item">
                                 <div class="form-check">
-                                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked>
                                   <label class="form-check-label" for="flexRadioDefault2">
                                     Default checked radio
                                   </label>
@@ -344,11 +355,13 @@
                     <div class="accordion accordion-flush" id="accordionFlushExample">
                       <div class="accordion-item">
                         <h2 class="accordion-header " id="flush-headingOne">
-                          <button class="btn btn-outline-success btn collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#agency" aria-expanded="false" aria-controls="flush-collapseOne">
+                          <button class="btn btn-outline-success btn collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#agency" aria-expanded="false" aria-controls="flush-collapseOne">
                             Agency <i class='bx bxs-right-arrow'></i>
                           </button>
                         </h2>
-                        <div id="agency" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div id="agency" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                          data-bs-parent="#accordionFlushExample">
                           <div class="accordion-body">
                             <div class="list-group">
                               <label class="list-group-item">
@@ -365,7 +378,8 @@
                               </label>
                               <label class="list-group-item">
                                 <div class="form-check">
-                                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                  <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                    id="flexRadioDefault2" checked>
                                   <label class="form-check-label" for="flexRadioDefault2">
                                     Default checked radio
                                   </label>
@@ -381,67 +395,67 @@
                       </div>
                     </div>
                     <!-- group section -->
-                    <div  class="accordion" id="accordionPanelsStayOpenExample">
-                      <div class="accordion-item">
-                        <h2 class="accordion-header" id="panelsStayOpen-headingOne">
-                          <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-                            Groups <i class='bx bxs-right-arrow'></i>
-                          </button>
-                        </h2>
-                        <div  id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
-                          <div class="accordion-body">
-                            <div class="list-group">
-                              <label class="list-group-item">
-                                <input class="form-check-input me-1" type="checkbox" value="">
-                                First checkbox
-                              </label>
-                              <label class="list-group-item">
-                                <input class="form-check-input me-1" type="checkbox" value="">
-                                Second checkbox
-                              </label>
-                              <label class="list-group-item">
-                                <div class="form-check form-switch">
-                                  <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
-                                  <label class="form-check-label" for="flexSwitchCheckChecked">New / Old</label>
-                                </div>
-                              </label>
-                              <label class="list-group-item">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                                  <label class="form-check-label" for="flexCheckChecked">
-                                    Checked checkbox
-                                  </label>
-                                </div>
-                              </label>
-                              <label class="list-group-item">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                  <label class="form-check-label" for="flexRadioDefault2">
-                                    Default
-                                  </label>
-                                </div>
-                              </label>
-                              <label class="list-group-item">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                  <label class="form-check-label" for="flexRadioDefault2">
-                                    Default 
-                                  </label>
-                                </div>
-                              </label> 
-                               <label class="list-group-item">
-                                <div class="form-check">
-                                  <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                  <label class="form-check-label" for="flexRadioDefault1">
-                                    Default radio
-                                  </label>
-                                </div>
-                              </label> 
-                               <label class="list-group-item">
-                               
-                              </label>
-
-                            </div>
+                    <div class="accordion" id="accordionPanelsStayOpenExample">
+                      <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                        <button class="btn btn-outline-success" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                          aria-controls="panelsStayOpen-collapseOne">
+                          Groups <i class='bx bxs-right-arrow'></i>
+                        </button>
+                      </h2>
+                      <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                        aria-labelledby="panelsStayOpen-headingOne">
+                        <div class="accordion-body">
+                          <div class="list-group">
+                            <label class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="">
+                              First checkbox
+                            </label>
+                            <label class="list-group-item">
+                              <input class="form-check-input me-1" type="checkbox" value="">
+                              Second checkbox
+                            </label>
+                            <label class="list-group-item">
+                              <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                <label class="form-check-label" for="flexSwitchCheckChecked">New / Old</label>
+                              </div>
+                            </label>
+                            <label class="list-group-item">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                <label class="form-check-label" for="flexCheckChecked">
+                                  Checked checkbox
+                                </label>
+                              </div>
+                            </label>
+                            <label class="list-group-item">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                  id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  Default
+                                </label>
+                              </div>
+                            </label>
+                            <label class="list-group-item">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                  id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  Default
+                                </label>
+                              </div>
+                            </label>
+                            <label class="list-group-item">
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                  id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Default radio
+                                </label>
+                              </div>
+                            </label>
                           </div>
                         </div>
                       </div>
@@ -449,49 +463,64 @@
                   </div>
                 </div>
                 <ul class="list-group">
-                  <li class="list-group-item d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false" aria-controls="collapseExample">
+                  <li class="list-group-item d-flex justify-content-between align-items-center"
+                    data-bs-toggle="collapse" data-bs-target="#collapseExample1" aria-expanded="false"
+                    aria-controls="collapseExample">
                     Bug
                     <span class="badge bg-danger rounded-pill">14</span>
                   </li>
                   <div class="collapse" id="collapseExample1">
                     <div class="card card-body">
-                      Bug placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                      Bug placeholder content for the collapse component. This panel is hidden by default but revealed
+                      when the user activates the relevant trigger.
                     </div>
                   </div>
-                  <li class="list-group-item d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false" aria-controls="collapseExample">
+                  <li class="list-group-item d-flex justify-content-between align-items-center"
+                    data-bs-toggle="collapse" data-bs-target="#collapseExample2" aria-expanded="false"
+                    aria-controls="collapseExample">
                     Syntax error
                     <span class="badge bg-warning rounded-pill">2</span>
                   </li>
                   <div class="collapse" id="collapseExample2">
                     <div class="card card-body">
-                      syntac error placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                      syntac error placeholder content for the collapse component. This panel is hidden by default but
+                      revealed when the user activates the relevant trigger.
                     </div>
                   </div>
-                  <li class="list-group-item d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false" aria-controls="collapseExample">
+                  <li class="list-group-item d-flex justify-content-between align-items-center"
+                    data-bs-toggle="collapse" data-bs-target="#collapseExample3" aria-expanded="false"
+                    aria-controls="collapseExample">
                     dependencies
                     <span class="badge bg-info rounded-pill">1</span>
                   </li>
                   <div class="collapse" id="collapseExample3">
                     <div class="card card-body">
-                      dependencies placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                      dependencies placeholder content for the collapse component. This panel is hidden by default but
+                      revealed when the user activates the relevant trigger.
                     </div>
                   </div>
-                  <li class="list-group-item d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false" aria-controls="collapseExample">
+                  <li class="list-group-item d-flex justify-content-between align-items-center"
+                    data-bs-toggle="collapse" data-bs-target="#collapseExample4" aria-expanded="false"
+                    aria-controls="collapseExample">
                     duplicate
                     <span class="badge bg-secondary rounded-pill">1</span>
                   </li>
                   <div class="collapse" id="collapseExample4">
                     <div class="card card-body">
-                      duplicate placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                      duplicate placeholder content for the collapse component. This panel is hidden by default but
+                      revealed when the user activates the relevant trigger.
                     </div>
                   </div>
-                  <li class="list-group-item d-flex justify-content-between align-items-center" data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false" aria-controls="collapseExample">
+                  <li class="list-group-item d-flex justify-content-between align-items-center"
+                    data-bs-toggle="collapse" data-bs-target="#collapseExample5" aria-expanded="false"
+                    aria-controls="collapseExample">
                     enhancement
                     <span class="badge bg-success rounded-pill">5</span>
                   </li>
                   <div class="collapse" id="collapseExample5">
                     <div class="card card-body">
-                      enhancement placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                      enhancement placeholder content for the collapse component. This panel is hidden by default but
+                      revealed when the user activates the relevant trigger.
                     </div>
                   </div>
                 </ul>
@@ -509,8 +538,8 @@
                     <h4 class="m-0">Frontend</h4>
                     <span style="color: #666;">Grounp Name</span>
                   </div>
-                <!--joined user in coversation-->
-                  <div  class="d-flex p-1 align-items-center border border-success"> 
+                  <!--joined user in coversation-->
+                  <div class="d-flex p-1 align-items-center border border-success">
                     <ul class="d-flex m-0 p-0">
                       <li><img src="./img/u.png" alt="..."></li>
                       <li><img src="./img/u2.png" alt="..."></li>
@@ -526,8 +555,8 @@
                     <img src="./img/u.png" alt="....">
                     <div class="ps-2">
                       <div class="d-flex align-items-center">
-                         <h5 class="m-0 fw-bolder">Client Name </h5>
-                         <span class="ms-2">7.30 AM</span>
+                        <h5 class="m-0 fw-bolder">Client Name </h5>
+                        <span class="ms-2">7.30 AM</span>
                       </div>
                       <p class="m-0">All members join meeeting at 12.00 Am sharp </p>
                     </div>
@@ -536,18 +565,20 @@
                     <img src="./img/u2.png" alt="....">
                     <div class="ps-2">
                       <div class="d-flex align-items-center">
-                         <h5 class="m-0 fw-bolder">client Name </h5>
-                         <span class="ms-2">11.30 AM</span>
+                        <h5 class="m-0 fw-bolder">client Name </h5>
+                        <span class="ms-2">11.30 AM</span>
                       </div>
-                      <p class="m-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium distinctio ex ullam veniam expedita facilis dolores architecto praesentium ducimus eligendi! Rem veritatis est tenetur excepturi recusandae voluptas voluptatibus fugit omnis! </p>
+                      <p class="m-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium distinctio ex
+                        ullam veniam expedita facilis dolores architecto praesentium ducimus eligendi! Rem veritatis est
+                        tenetur excepturi recusandae voluptas voluptatibus fugit omnis! </p>
                     </div>
                   </div>
                   <div class="py-2 d-flex">
                     <img src="./img/u3.png" alt="....">
                     <div class="ps-2">
                       <div class="d-flex align-items-center">
-                         <h5 class="m-0 fw-bolder">Client Name </h5>
-                         <span class="ms-2">9.00 AM</span>
+                        <h5 class="m-0 fw-bolder">Client Name </h5>
+                        <span class="ms-2">9.00 AM</span>
                       </div>
                       <p class="m-0">Sir I'm out of town can we dot it on some aonther time </p>
                     </div>
@@ -556,20 +587,23 @@
                     <img src="./img/u.png" alt="....">
                     <div class="ps-2">
                       <div class="d-flex align-items-center">
-                         <h5 class="m-0 fw-bolder">Cient Name </h5>
-                         <span class="ms-2">4.44 PM</span>
+                        <h5 class="m-0 fw-bolder">Cient Name </h5>
+                        <span class="ms-2">4.44 PM</span>
                       </div>
-                      <p class="m-0">hey are you there for quick call so we can proceed, no late commers are allowed , be on time</p>
+                      <p class="m-0">hey are you there for quick call so we can proceed, no late commers are allowed ,
+                        be on time</p>
                     </div>
                   </div>
                   <div class="py-2 d-flex">
                     <img src="./img/u2.png" alt="....">
                     <div class="ps-2">
                       <div class="d-flex align-items-center">
-                         <h5 class="m-0 fw-bolder">client Name </h5>
-                         <span class="ms-2">11.30 AM</span>
+                        <h5 class="m-0 fw-bolder">client Name </h5>
+                        <span class="ms-2">11.30 AM</span>
                       </div>
-                      <p class="m-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium distinctio ex ullam veniam expedita facilis dolores architecto praesentium ducimus eligendi! Rem veritatis est tenetur excepturi recusandae voluptas voluptatibus fugit omnis! </p>
+                      <p class="m-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium distinctio ex
+                        ullam veniam expedita facilis dolores architecto praesentium ducimus eligendi! Rem veritatis est
+                        tenetur excepturi recusandae voluptas voluptatibus fugit omnis! </p>
                     </div>
                   </div>
                 </div>
@@ -582,20 +616,293 @@
                       rows="3"></textarea>
                   </div>
                   <div class="d-flex justify-content-between align-items-center px-2 py-1">
-                    <div >
-                       <i class='bx bx-video'></i> 
-                       <i class='bx bx-microphone'></i>
-                       <i class='bx bx-smile'></i> 
-                       <i class='bx bx-at'></i> 
-                    </div> 
-                     <i class='bx bxl-telegram'></i>
+                    <div>
+                      <i class='bx bx-video'></i>
+                      <i class='bx bx-microphone'></i>
+                      <i class='bx bx-smile'></i>
+                      <i class='bx bx-at'></i>
+                    </div>
+                    <i class='bx bxl-telegram'></i>
                   </div>
                 </div>
               </div>
               <!-- output section-->
-              <div class="tab-pane" id="settings" role="tabpanel" aria-labelledby="settings-tab">
+              <div class="tab-pane" id="output" role="tabpanel" aria-labelledby="settings-tab">
                 <p>Compiled Successfully</p>
               </div>
+              <!-- output section end-->
+              <!-- test case section-->
+              <div class="tab-pane" id="testcase" role="tabpanel" aria-labelledby="settings-tab">
+                <div class="px-1">
+                  <h3 class="text-center py-1 btn-success"> <i class='bx bxs-plus-circle'></i> Add Test Group</h3>
+                  <div>
+                    <ul class="list-group px-3">
+                      <li class="list-group-item d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse" data-bs-target="#testgroup1" aria-expanded="false"
+                        aria-controls="collapseExample">
+                        <h5>Text Group 1</h5>
+                        <div>
+                          <button class="btn btn-outline-success">Run <i class='bx bx-play-circle'></i> </button>
+                        </div>
+                      </li>
+                      <div class="collapse" id="testgroup1">
+                        <!-- test group 1-->
+                        <div class="card px-3 py-1">
+                          <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center"
+                              data-bs-toggle="collapse" data-bs-target="#testcase1" aria-expanded="false"
+                              aria-controls="collapseExample">
+                              <span class="p-2 badge bg-success">Syntax</span>
+                              <h5> Test Case 1</h5>
+                              <div>
+                                <span class="badge bg-success"> <i class='bx bx-check '></i> </span>
+                              </div>
+                            </li>
+                            <div class="collapse" id="testcase1">
+                              <div class="card px-2 ">
+                                <div class="px-2 pt-1 d-flex justify-content-between"> 
+                                  <h4>Test Name</h4>
+                                  <h5 class="btn btn-outline-danger"><i class='bx bx-trash'></i> Delete</h5>
+                                </div>
+                                <div class="mx-1 mb-3 d-flex text-center border border-1 border-dark">
+                                  <div class="border-end border-dark" style="width: 100%; height: 15rem;">
+                                    <h5 class="bg-success py-1 text-light" >Input</h5>
+                                  </div>
+                                  <div style="width: 100%; height: 15rem;">
+                                    <h5 class="bg-success py-1  text-light">Output</h5>
+                                  </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                  <label for="floatingTextarea2">discription</label>
+                                </div>
+                                <div class="d-flex justify-content-between my-3">
+                                  <button class="btn btn-outline-success"><i class='bx bxs-save' ></i> save</button>
+                                  <button class="btn btn-outline-info"><i class='bx bx-git-compare' ></i> Compare</button>
+                                </div>
+                              </div>
+                            </div>
+                            <li class="list-group-item d-flex justify-content-between align-items-center"
+                              data-bs-toggle="collapse" data-bs-target="#testcase2" aria-expanded="false"
+                              aria-controls="collapseExample">
+                              <span class="p-2 badge bg-success">Click</span>
+                              <h5> Test Case 2</h5>
+                              <div>
+                                <span class="badge bg-danger"> <i class='bx bx-x '></i> </span>
+                              </div>
+                            </li>
+                            <div class="collapse" id="testcase2">
+                              <div class="card px-2 ">
+                                <div class="px-2 pt-1 d-flex justify-content-between"> 
+                                  <h4>Test Name</h4>
+                                  <h5 class="btn btn-outline-danger"><i class='bx bx-trash'></i> Delete</h5>
+                                </div>
+                                <div class="mx-1 mb-3 d-flex text-center border border-1 border-dark">
+                                  <div class="border-end border-dark" style="width: 100%; height: 15rem;">
+                                    <h5 class="bg-success py-1 text-light" >Input</h5>
+                                  </div>
+                                  <div style="width: 100%; height: 15rem;">
+                                    <h5 class="bg-success py-1  text-light">Output</h5>
+                                  </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                  <label for="floatingTextarea2">discription</label>
+                                </div>
+                                <div class="d-flex justify-content-between my-3">
+                                  <button class="btn btn-outline-success"><i class='bx bxs-save' ></i> save</button>
+                                  <button class="btn btn-outline-info"><i class='bx bx-git-compare' ></i> Compare</button>
+                                </div>
+                              </div>
+                            </div>
+                            <li class="list-group-item d-flex justify-content-between align-items-center"
+                              data-bs-toggle="collapse" data-bs-target="#testcase3" aria-expanded="false"
+                              aria-controls="collapseExample">
+                              <span class="p-2 badge bg-success">Func</span>
+                              <h5> Test Case 3</h5>
+                              <div>
+                                <span class="badge bg-success"> <i class='bx bx-check '></i> </span>
+                              </div>
+                            </li>
+                            <div class="collapse" id="testcase3">
+                              <div class="card px-2 ">
+                                <div class="px-2 pt-1 d-flex justify-content-between"> 
+                                  <h4>Test Name</h4>
+                                  <h5 class="btn btn-outline-danger"><i class='bx bx-trash'></i> Delete</h5>
+                                </div>
+                                <div class="mx-1 mb-3 d-flex text-center border border-1 border-dark">
+                                  <div class="border-end border-dark" style="width: 100%; height: 15rem;">
+                                    <h5 class="bg-success py-1 text-light" >Input</h5>
+                                  </div>
+                                  <div style="width: 100%; height: 15rem;">
+                                    <h5 class="bg-success py-1  text-light">Output</h5>
+                                  </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                  <label for="floatingTextarea2">discription</label>
+                                </div>
+                                <div class="d-flex justify-content-between my-3">
+                                  <button class="btn btn-outline-success"><i class='bx bxs-save' ></i> save</button>
+                                  <button class="btn btn-outline-info"><i class='bx bx-git-compare' ></i> Compare</button>
+                                </div>
+                              </div>
+                            </div>
+                          </ul>
+                        </div>
+                      </div>
+                      <li class="list-group-item d-flex justify-content-between align-items-center"
+                        data-bs-toggle="collapse" data-bs-target="#testgroup2" aria-expanded="false"
+                        aria-controls="collapseExample">
+                        <h5>Text Group 2</h5>
+                        <div>
+                          <button class="btn btn-outline-success">Run <i class='bx bx-play-circle'></i></button>
+                        </div>
+                      </li>
+                      <div class="collapse" id="testgroup2">
+                        <!--test group 2-->
+                        <div class="card px-3 py-1">
+                          <ul class="list-group">
+                            <li class="list-group-item d-flex justify-content-between align-items-center"
+                              data-bs-toggle="collapse" data-bs-target="#testcase1" aria-expanded="false"
+                              aria-controls="collapseExample">
+                              <span class="p-2 badge bg-success">Syntax</span>
+                              <h5> Test Case 1</h5>
+                              <div>
+                                <span class="badge bg-success"> <i class='bx bx-check '></i> </span>
+                              </div>
+                            </li>
+                            <div class="collapse" id="testcase1">
+                              <div class="card px-2 ">
+                                <div class="px-2 pt-1 d-flex justify-content-between"> 
+                                  <h4>Test Name</h4>
+                                  <h5 class="btn btn-outline-danger"><i class='bx bx-trash'></i> Delete</h5>
+                                </div>
+                                <div class="mx-1 mb-3 d-flex text-center border border-1 border-dark">
+                                  <div class="border-end border-dark" style="width: 100%; height: 15rem;">
+                                    <h5 class="bg-success py-1 text-light" >Input</h5>
+                                  </div>
+                                  <div style="width: 100%; height: 15rem;">
+                                    <h5 class="bg-success py-1  text-light">Output</h5>
+                                  </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                  <label for="floatingTextarea2">discription</label>
+                                </div>
+                                <div class="d-flex justify-content-between my-3">
+                                  <button class="btn btn-outline-success"><i class='bx bxs-save' ></i> save</button>
+                                  <button class="btn btn-outline-info"><i class='bx bx-git-compare' ></i> Compare</button>
+                                </div>
+                              </div>
+                            </div>
+                            <li class="list-group-item d-flex justify-content-between align-items-center"
+                              data-bs-toggle="collapse" data-bs-target="#testcase2" aria-expanded="false"
+                              aria-controls="collapseExample">
+                              <span class="p-2 badge bg-success">Click</span>
+                              <h5> Test Case 2</h5>
+                              <div>
+                                <span class="badge bg-danger"> <i class='bx bx-x '></i> </span>
+                              </div>
+                            </li>
+                            <div class="collapse" id="testcase2">
+                              <div class="card px-2 ">
+                                <div class="px-2 pt-1 d-flex justify-content-between"> 
+                                  <h4>Test Name</h4>
+                                  <h5 class="btn btn-outline-danger"><i class='bx bx-trash'></i> Delete</h5>
+                                </div>
+                                <div class="mx-1 mb-3 d-flex text-center border border-1 border-dark">
+                                  <div class="border-end border-dark" style="width: 100%; height: 15rem;">
+                                    <h5 class="bg-success py-1 text-light" >Input</h5>
+                                  </div>
+                                  <div style="width: 100%; height: 15rem;">
+                                    <h5 class="bg-success py-1  text-light">Output</h5>
+                                  </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                  <label for="floatingTextarea2">discription</label>
+                                </div>
+                                <div class="d-flex justify-content-between my-3">
+                                  <button class="btn btn-outline-success"><i class='bx bxs-save' ></i> save</button>
+                                  <button class="btn btn-outline-info"><i class='bx bx-git-compare' ></i> Compare</button>
+                                </div>
+                              </div>
+                            </div>
+                            <li class="list-group-item d-flex justify-content-between align-items-center"
+                              data-bs-toggle="collapse" data-bs-target="#testcase3" aria-expanded="false"
+                              aria-controls="collapseExample">
+                              <span class="p-2 badge bg-success">Func</span>
+                              <h5> Test Case 3</h5>
+                              <div>
+                                <span class="badge bg-success"> <i class='bx bx-check '></i> </span>
+                              </div>
+                            </li>
+                            <div class="collapse" id="testcase3">
+                              <div class="card px-2 ">
+                                <div class="px-2 pt-1 d-flex justify-content-between"> 
+                                  <h4>Test Name</h4>
+                                  <h5 class="btn btn-outline-danger"><i class='bx bx-trash'></i> Delete</h5>
+                                </div>
+                                <div class="mx-1 mb-3 d-flex text-center border border-1 border-dark">
+                                  <div class="border-end border-dark" style="width: 100%; height: 15rem;">
+                                    <h5 class="bg-success py-1 text-light" >Input</h5>
+                                  </div>
+                                  <div style="width: 100%; height: 15rem;">
+                                    <h5 class="bg-success py-1  text-light">Output</h5>
+                                  </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                  <label for="floatingTextarea2">discription</label>
+                                </div>
+                                <div class="d-flex justify-content-between my-3">
+                                  <button class="btn btn-outline-success"><i class='bx bxs-save' ></i> save</button>
+                                  <button class="btn btn-outline-info"><i class='bx bx-git-compare' ></i> Compare</button>
+                                </div>
+                              </div>
+                            </div>
+                            <li class="list-group-item d-flex justify-content-between align-items-center"
+                              data-bs-toggle="collapse" data-bs-target="#testcase3" aria-expanded="false"
+                              aria-controls="collapseExample">
+                              <span class="p-2 badge bg-success">Func</span>
+                              <h5> Test Case 4</h5>
+                              <div>
+                                <span class="badge bg-danger"> <i class='bx bx-x '></i> </span>
+                              </div>
+                            </li>
+                            <div class="collapse" id="testcase3">
+                              <div class="card px-2 ">
+                                <div class="px-2 pt-1 d-flex justify-content-between"> 
+                                  <h4>Test Name</h4>
+                                  <h5 class="btn btn-outline-danger"><i class='bx bx-trash'></i> Delete</h5>
+                                </div>
+                                <div class="mx-1 mb-3 d-flex text-center border border-1 border-dark">
+                                  <div class="border-end border-dark" style="width: 100%; height: 15rem;">
+                                    <h5 class="bg-success py-1 text-light" >Input</h5>
+                                  </div>
+                                  <div style="width: 100%; height: 15rem;">
+                                    <h5 class="bg-success py-1  text-light">Output</h5>
+                                  </div>
+                                </div>
+                                <div class="form-floating mb-3">
+                                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+                                  <label for="floatingTextarea2">discription</label>
+                                </div>
+                                <div class="d-flex justify-content-between my-3">
+                                  <button class="btn btn-outline-success"><i class='bx bxs-save' ></i> save</button>
+                                  <button class="btn btn-outline-info"><i class='bx bx-git-compare' ></i> Compare</button>
+                                </div>
+                              </div>
+                            </div>
+                          </ul>
+                        </div>
+                      </div>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- test case section end-->
             </div>
           </div>
         </div>
@@ -605,8 +912,8 @@
 
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>

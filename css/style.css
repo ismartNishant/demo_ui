@@ -129,12 +129,18 @@ a {
   overflow-y: scroll !important;
   object-fit: cover;
 }
-
+.bx-check,
+.bx-x{
+ font-size: 1.2rem;
+}
+.nav-link{
+  padding: .5rem;
+}
 /* Media queries */
 @media (max-width: 1000px) {
   .main-container {
     padding: 0 !important;
-    width: 90% !important;
+    width: 100% !important;
   }
   .path-header nav ol li:nth-child(1),
   .path-header nav ol li:nth-child(2) {
@@ -211,8 +217,6 @@ a {
   }
   .editor-container div {
     width: 100% !important;
-    height: 100%;
-    text-align: center;
   }
   .editor-container .col-3 {
     display: none;
